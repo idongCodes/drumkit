@@ -16,6 +16,16 @@ footer {
   font-family: sans-serif;
 }
 
+footer a.twitter {
+  color: #DBEDF3;
+  text-decoration: none;
+  padding-bottom: 3px;
+}
+
+footer a.twitter:hover {
+  border-bottom:1px dashed white;
+}
+
 .w {
 
 }
