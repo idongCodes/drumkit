@@ -24,6 +24,7 @@ footer a.twitter {
 
 footer a.twitter:hover {
   border-bottom:1px dashed white;
+  color: white;
 }
 
 .w {
