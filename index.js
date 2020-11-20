@@ -1,4 +1,4 @@
-let btn = document.querySelectorAll('button');
+let btn = document.querySelectorAll('.drum');
 
 for (let b = 0; b < btn.length; b++) {
     btn[b].addEventListener('click', () => {
