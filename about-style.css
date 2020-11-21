@@ -1,6 +1,11 @@
+html, body {
+  scroll-behavior: smooth;
+}
+
 body {
     text-align: center;
     background-color: #283149;
+    padding: 30px 0 0;
   }
 
   h1 {
@@ -52,30 +57,58 @@ body {
       font-family: sans-serif;
   }
 
+  .container .about-proj span {
+    color: #DA0463;
+  }
+
   .container .about-proj .my-img {
-      border: 2px solid silver;
       width: 50vw;
       margin: 25px auto;
-      height: 240px;
-      overflow-y: scroll;
+      overflow-y: auto;
   }
 
   .container .about-proj .my-img img {
       width: 100%;
   }
 
+  .scroll-to-top {
+    display: inline-block;
+    position: fixed;
+    z-index: 99;
+    bottom: 60px;
+    right: 30px;
+  }
+
+  .scroll-to-top ion-icon {
+    color: #DA0463;
+    font-size:1.8rem;
+  }
+
+  .scroll-to-top ion-icon:hover {
+    color: whitesmoke;
+  }
+
   footer {
     color: #DBEDF3;
     font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer p {
+    margin: 0 10px 0;
+  }
+  
+  footer a {
+    color: #DA0463;
+  }
+  
+  footer .a-ionicon {
+    display: flex;
   }
   
   footer a.twitter {
-    color: #DBEDF3;
     text-decoration: none;
     padding-bottom: 3px;
-  }
-  
-  footer a.twitter:hover {
-    border-bottom:1px dashed white;
-    color: white;
   }

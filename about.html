@@ -11,7 +11,7 @@
     />
   </head>
   <body>
-    <nav class="my-nav">
+    <nav id="top" class="my-nav">
         <ul>
           <li><a href="./index.html">home</a></li>
           <li><a href="">about</a></li>
@@ -22,7 +22,7 @@
 
       <div class="container">
           <div class="about-proj">
-              This project was built in lieu of my continued endeavour to better learn JavaScript and the DOM. I used a JavaScript for loop to targt button elements and add an event listener to each. The event listener fired off a function that on button click, a unique sound was played - using JavaScript's Audio object and the play() method.
+              This project was built in lieu of my continued endeavour to better learn JavaScript and the DOM. I used a JavaScript for loop to targt button elements and add an event listener to each. The event listener fired off a function that on button click, a unique sound was played - using JavaScript's Audio object and the <span>play()</span> method.
               <div class="my-img">
                 <img src="./images/code.png" alt="code snippet" srcset="">
               </div>
@@ -30,17 +30,24 @@
               <div class="my-img">
                 <img src="./images/code(1).png" alt="code snippet" srcset="">
               </div>
-            </div>
+              I later went in and made three changes to enable different drum sounds to be played when certain keys are pressed on a physical keyboard. Moved the switch statement into it's own function <span>playSound()</span>. I then passed this function into two other anonymous functions. One that is triggered by an on button click event listener, the second - an event listener on the document object that is triggered by a physical keyboard press - when the key pressed matches the character in any of our buttons' inner html.
+              <div  class="my-img">
+                <img src="./images/code(2).png" alt="" srcset="">
+              </div>
+          </div>
       </div>
 
-    <footer>
-      <p>
-        &copy; <span id="crdate"></span>,
-        <a href="https://twitter.com/iessiendev" target="_blank" class="twitter"
-          >iessiendev</a
-        >
-      </p>
-    </footer>
+      <div class="scroll-to-top">
+        <a href="#top">
+          <ion-icon name="arrow-up-circle"></ion-icon>
+        </a>
+      </div>
+
+      <footer>
+        <p>&copy; <span id="crdate"></span>, <a href="https://twitter.com/iessiendev" target="_blank" class="twitter">iessiendev</a> </p> <a href="https://github.com/idongessien/drumkit" target="_blank" class="a-ionicon"><ion-icon name="logo-github"></ion-icon></a>
+      </footer>
+      
     <script src="index.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
   </body>
 </html>

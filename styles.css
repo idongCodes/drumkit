@@ -1,6 +1,7 @@
 body {
   text-align: center;
   background-color: #283149;
+  padding: 30px 0 0;
 }
 
 h1 {
@@ -45,17 +46,26 @@ h1 {
 footer {
   color: #DBEDF3;
   font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  margin: 0 10px 0;
+}
+
+footer a {
+  color: #DA0463;
+}
+
+footer .a-ionicon {
+  display: flex;
 }
 
 footer a.twitter {
-  color: #DBEDF3;
   text-decoration: none;
   padding-bottom: 3px;
-}
-
-footer a.twitter:hover {
-  border-bottom:1px dashed white;
-  color: white;
 }
 
 .w {
