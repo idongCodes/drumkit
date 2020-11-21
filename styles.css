@@ -8,7 +8,38 @@ h1 {
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
+}
 
+.my-nav ul {
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20vw;
+  margin: auto;
+}
+
+.my-nav ul li {
+  list-style-type: none;
+}
+
+.my-nav ul li:nth-child(1) {
+  background: #DA0463;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.my-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Arvo", cursive;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.my-nav ul li a:hover {
+  background: #DA0463;
 }
 
 footer {
@@ -28,31 +59,31 @@ footer a.twitter:hover {
 }
 
 .w {
-
+  background-image: url('./images/tom1.png');
 }
 
 .a {
-
+  background-image: url('./images/tom2.png');
 }
 
 .s {
-
+  background: url('./images/tom3.png');
 }
 
 .d {
-
+  background: url('./images/tom4.png');
 }
 
 .j {
-
+  background: url('./images/crash.png');
 }
 
 .k {
-
+  background: url('./images/kick.png');
 }
 
 .l {
-
+  background: url('./images/snare.png');
 }
 
 .set {

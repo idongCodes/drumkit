@@ -1,0 +1,81 @@
+body {
+    text-align: center;
+    background-color: #283149;
+  }
+
+  h1 {
+    font-size: 5rem;
+    color: #DBEDF3;
+    font-family: "Arvo", cursive;
+    text-shadow: 3px 0 #DA0463;
+  }
+
+  .my-nav ul {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20vw;
+    margin: auto;
+  }
+  
+  .my-nav ul li {
+    list-style-type: none;
+  }
+  
+  .my-nav ul li:nth-child(2) {
+    background: #DA0463;
+    padding: 5px;
+    border-radius: 8px;
+  }
+  
+  .my-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Arvo", cursive;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 8px;
+  }
+  
+  .my-nav ul li a:hover {
+    background: #DA0463;
+  }
+
+  .container .about-proj {
+      color: rgba(255,255,255, .7);
+      font-size: 1.5rem;
+      line-height: 2.3rem;
+      text-align: left;
+      width: 70vw;
+      margin: auto;
+      font-family: sans-serif;
+  }
+
+  .container .about-proj .my-img {
+      border: 2px solid silver;
+      width: 50vw;
+      margin: 25px auto;
+      height: 240px;
+      overflow-y: scroll;
+  }
+
+  .container .about-proj .my-img img {
+      width: 100%;
+  }
+
+  footer {
+    color: #DBEDF3;
+    font-family: sans-serif;
+  }
+  
+  footer a.twitter {
+    color: #DBEDF3;
+    text-decoration: none;
+    padding-bottom: 3px;
+  }
+  
+  footer a.twitter:hover {
+    border-bottom:1px dashed white;
+    color: white;
+  }

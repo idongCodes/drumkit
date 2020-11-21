@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - DOM Practice</title>
+    <link rel="stylesheet" href="about-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="my-nav">
+        <ul>
+          <li><a href="./index.html">home</a></li>
+          <li><a href="">about</a></li>
+        </ul>
+      </nav>
+
+      <h1 id="title">About Drum 🥁 Kit</h1>
+
+      <div class="container">
+          <div class="about-proj">
+              This project was built in lieu of my continued endeavour to better learn JavaScript and the DOM. I used a JavaScript for loop to targt button elements and add an event listener to each. The event listener fired off a function that on button click, a unique sound was played - using JavaScript's Audio object and the play() method.
+              <div class="my-img">
+                <img src="./images/code.png" alt="code snippet" srcset="">
+              </div>
+              Inside of the event listener, I targeted the inner html for each button to use as the triggers for the <b>switch</b> statement I implemented, - as opposed to <b>if statements</b>.
+              <div class="my-img">
+                <img src="./images/code(1).png" alt="code snippet" srcset="">
+              </div>
+            </div>
+      </div>
+
+    <footer>
+      <p>
+        &copy; <span id="crdate"></span>,
+        <a href="https://twitter.com/iessiendev" target="_blank" class="twitter"
+          >iessiendev</a
+        >
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
