@@ -8,6 +8,8 @@ for (let b = 0; b < btn.length; b++) {
         var btnInnerHTML = this.innerHTML;
 
         playSound(btnInnerHTML);
+
+        animateBtn(btnInnerHTML);
         
     });
 
@@ -17,6 +19,8 @@ for (let b = 0; b < btn.length; b++) {
 document.addEventListener('keydown', function(e) {
 
     playSound(e.key);
+
+    animateBtn(e.key);
 
 });
 
@@ -55,6 +59,14 @@ function playSound(character) {
             console.log(btnInnerHTML);
     }
 }
+
+function animateBtn(keyPressed) {
+    document.querySelector('.' + keyPressed).classList.add('pressed');
+
+    setTimeout(function(){
+        document.querySelector('.' + keyPressed).classList.remove('pressed');
+    }, 200);
+};
 
 let updateDate = new Date().getFullYear();
 document.querySelector('#crdate').append(updateDate);

@@ -71,6 +71,17 @@ body {
       width: 100%;
   }
 
+  .go-back {
+    text-decoration: none;
+    color: #DA0463;
+    padding: 0 0 5px;
+    border-bottom: 1px dashed #DA0463;
+  }
+
+  .go-back:hover {
+    color: #FE48A7;
+  }
+
   .scroll-to-top {
     display: inline-block;
     position: fixed;
